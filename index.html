@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aselvimeridyen | Ufuk & Kübra Altaş</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .swiper { width: 100%; height: 80vh; }
+        .swiper-slide img { width: 100%; height: 100%; object-cover: cover; filter: grayscale(40%); }
+        .nav-link { font-size: 10px; font-weight: 900; tracking-widest: 0.2em; transition: all 0.3s; }
+        .nav-link:hover { color: #0d9488; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic">
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-[100] border-b border-slate-100 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-teal-600 tracking-tighter underline decoration-2 underline-offset-4">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            <div class="hidden md:flex gap-10">
+                <a href="#hizmetler" class="nav-link">HİZMETLER</a>
+                <a href="meridyen-terapi.html" class="nav-link">TERAPİ NEDİR?</a>
+                <a href="urunler.html" class="nav-link">ÜRÜNLER</a>
+                <a href="#iletisim" class="nav-link">İLETİŞİM</a>
+            </div>
+            <a href="https://wa.me/905055372527" class="bg-[#25D366] text-white px-6 py-3 rounded-xl font-black text-[10px] tracking-widest hover:scale-105 transition">RANDEVU AL</a>
+        </div>
+    </nav>
+
+    <section class="relative">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative">
+                    <img src="img/slider1.jpg" alt="Meridyen Terapi">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h2 class="text-white text-5xl md:text-8xl font-black text-center" data-aos="zoom-in">ŞİFAYA <br>YOLCULUK</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="img/slider2.jpg" alt="Fizyoterapi">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h2 class="text-white text-5xl md:text-8xl font-black text-center">BÜTÜNCÜL <br>SAĞLIK</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="img/slider3.jpg" alt="Gümüş Eldiven Seansı">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h2 class="text-white text-5xl md:text-8xl font-black text-center">TEKNOLOJİK <br>TERAPİ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="hizmetler" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-teal-600 font-bold text-xs mb-4 tracking-widest">HOŞ GELDİNİZ</h3>
+                    <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">UFUK & KÜBRA ALTAŞ <br>İLE MERİDYEN TERAPİ</h2>
+                    <p class="text-slate-500 text-sm leading-loose mb-10">KOCAELİ'DE MODERN FİZYOTERAPİ VE GELENEKSEL ÇİN TIBBINI BİRLEŞTİREREK SİZLERE EN İYİ ŞİFA DENEYİMİNİ SUNUYORUZ.</p>
+                    <a href="meridyen-terapi.html" class="inline-block border-b-4 border-teal-500 pb-2 text-xl font-black hover:text-teal-600 transition">TERAPİ DETAYLARINI GÖR →</a>
+                </div>
+                <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="bg-slate-50 p-8 rounded-[3rem] text-center shadow-sm">
+                        <h4 class="text-3xl font-black text-teal-600 mb-2">1000+</h4>
+                        <p class="text-[9px] font-bold">MUTLU DANIŞAN</p>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-[3rem] text-center text-white shadow-xl">
+                        <h4 class="text-3xl font-black text-teal-400 mb-2">25+</h4>
+                        <p class="text-[9px] font-bold">UZMANLIK ALANI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[4rem] p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 shadow-2xl shadow-teal-100/50" data-aos="flip-up">
+                <div class="md:w-1/2">
+                    <img src="img/urun1.avif" class="rounded-[3rem] shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-black mb-6">PROFESYONEL ÜRÜNLERİMİZ</h2>
+                    <p class="text-slate-500 mb-10 uppercase text-xs">FOHOW ENERJİ BALSAMI, DİŞ MACUNU VE ALOE JEL GİBİ KUANTUM TEKNOLOJİSİYLE ÜRETİLMİŞ ÜRÜNLERİMİZİ İNCELEYİN VE SİPARİŞ VERİN.</p>
+                    <a href="urunler.html" class="bg-slate-900 text-white px-12 py-5 rounded-2xl font-black tracking-widest text-xs hover:bg-teal-600 transition inline-block">MAĞAZAYA GİT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-black mb-12 text-center underline decoration-teal-500 decoration-4">BİZE ULAŞIN</h3>
+            <div class="rounded-[3.5rem] overflow-hidden shadow-2xl h-[450px] border-8 border-white" data-aos="zoom-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.565818816484!2d29.832968312211422!3d40.771510433845014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ2JzE3LjQiTiAyOcKwNDknNTguNyJF!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-16 mb-20">
+                <div>
+                    <h4 class="text-2xl font-black mb-6 text-teal-400">ASELVİMERİDYEN</h4>
+                    <p class="text-[10px] text-slate-400">DOĞAL ŞİFA VE MODERN TEKNOLOJİNİN BULUŞMA NOKTASI.</p>
+                </div>
+                <div>
+                    <h5 class="font-black mb-6 tracking-widest">HIZLI MENÜ</h5>
+                    <ul class="text-[10px] space-y-4 text-slate-400">
+                        <li><a href="meridyen-terapi.html" class="hover:text-white transition">MERİDYEN TERAPİ NEDİR?</a></li>
+                        <li><a href="urunler.html" class="hover:text-white transition">ÜRÜNLERİMİZ</a></li>
+                        <li><a href="kvkk.html" class="hover:text-white transition">KVKK AYDINLATMA</a></li>
+                        <li><a href="gizlilik.html" class="hover:text-white transition">GİZLİLİK ŞARTLARI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-black mb-6 tracking-widest">İLETİŞİM</h5>
+                    <p class="text-[10px] text-slate-400 leading-loose">KOCAELİ / TÜRKİYE<br>TEL: +90 505 537 25 27</p>
+                </div>
+            </div>
+            <div class="text-center text-[8px] text-slate-500 tracking-[0.5em] border-t border-slate-800 pt-10">
+                © 2026 ASELVİMERİDYEN - UFUK ALTAŞ & KÜBRA ALTAŞ
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        var swiper = new Swiper(".mySwiper", {
+            pagination: { el: ".swiper-pagination", clickable: true },
+            autoplay: { delay: 4000 },
+            loop: true
+        });
+    </script>
+</body>
+</html>

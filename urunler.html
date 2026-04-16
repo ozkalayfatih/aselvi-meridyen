@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz | Aselvimeridyen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .product-card { border-radius: 2.5rem; transition: all 0.4s ease; cursor: pointer; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1); }
+        .modal-active { overflow: hidden; }
+        .custom-scroll::-webkit-scrollbar { width: 4px; }
+        .custom-scroll::-webkit-scrollbar-track { background: #f1f1f1; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #0d9488; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black text-teal-600 underline decoration-2 underline-offset-4 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            <div class="flex gap-8">
+                <a href="index.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
+                <a href="meridyen-terapi.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition">TERAPİ NEDİR?</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-white text-center border-b">
+        <div class="container mx-auto px-6" data-aos="fade-down">
+            <h1 class="text-4xl md:text-5xl font-black mb-4">PROFESYONEL ÜRÜNLER</h1>
+            <p class="text-slate-500 text-[10px] tracking-[0.4em]">DOĞAL İÇERİK, GÜÇLÜ FORMÜL VE ŞİFA</p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div onclick="openModal('modal-fohow')" class="product-card bg-white p-6 shadow-xl border border-slate-100" data-aos="fade-up">
+                    <div class="relative overflow-hidden rounded-[2rem] mb-6 aspect-square bg-slate-100">
+                        <img src="img/urun1.avif" alt="Fohow Enerji Balsamı" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-teal-600 text-white text-[8px] font-black px-3 py-1 rounded-full tracking-widest">POPÜLER</div>
+                    </div>
+                    <h3 class="text-xl font-black mb-2 uppercase">FOHOW ENERJİ BALSAMI</h3>
+                    <p class="text-[10px] text-teal-600 font-bold mb-4 tracking-tighter">BİTKİSEL ÖZLER & KUANTUM TEKNOLOJİSİ</p>
+                    <button class="w-full py-4 bg-slate-900 text-white rounded-2xl font-black text-[10px] tracking-widest hover:bg-teal-600 transition">İNCELE</button>
+                </div>
+
+                <div onclick="openModal('modal-dis')" class="product-card bg-white p-6 shadow-xl border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-[2rem] mb-6 aspect-square bg-slate-100">
+                        <img src="img/urun2.avif" alt="Fohow Diş Macunu" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-teal-600 text-white text-[8px] font-black px-3 py-1 rounded-full tracking-widest">2'Lİ PAKET</div>
+                    </div>
+                    <h3 class="text-xl font-black mb-2 uppercase">FOHOW DİŞ MACUNU</h3>
+                    <p class="text-[10px] text-teal-600 font-bold mb-4 tracking-tighter">BİTKİSEL AKTİF BİLEŞENLER</p>
+                    <button class="w-full py-4 bg-slate-900 text-white rounded-2xl font-black text-[10px] tracking-widest hover:bg-teal-600 transition">İNCELE</button>
+                </div>
+
+                <div onclick="openModal('modal-aloe')" class="product-card bg-white p-6 shadow-xl border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-[2rem] mb-6 aspect-square bg-slate-100">
+                        <img src="img/urun3.avif" alt="Fohow Aloe Vera Jel" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-teal-600 text-white text-[8px] font-black px-3 py-1 rounded-full tracking-widest">%100 BİTKİSEL</div>
+                    </div>
+                    <h3 class="text-xl font-black mb-2 uppercase">FOHOW ALOE VERA JEL</h3>
+                    <p class="text-[10px] text-teal-600 font-bold mb-4 tracking-tighter">HİÇBİR KATKI MADDESİ İÇERMEZ</p>
+                    <button class="w-full py-4 bg-slate-900 text-white rounded-2xl font-black text-[10px] tracking-widest hover:bg-teal-600 transition">İNCELE</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-fohow" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-5xl rounded-[3rem] overflow-hidden flex flex-col md:flex-row relative max-h-[90vh] overflow-y-auto custom-scroll">
+            <button onclick="closeModal('modal-fohow')" class="absolute top-6 right-6 font-black text-2xl z-20 bg-white/80 w-10 h-10 rounded-full shadow-lg">&times;</button>
+            <div class="md:w-1/2 bg-slate-100">
+                <img src="img/urun1.avif" class="w-full h-full object-cover min-h-[400px]">
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-3xl font-black mb-2 underline decoration-teal-500 underline-offset-8">FOHOW ENERJİ BALSAMI</h2>
+                <p class="text-teal-600 font-bold text-[10px] mb-8 tracking-[0.2em]">DOĞAL İÇERİK & KUANTUM SENTEZİ</p>
+                <div class="space-y-4 mb-8 text-[11px] leading-loose text-slate-600">
+                    <p>ÇİN TIBBI PRATİKLERİNİ MODERN TEKNOLOJİ İLE BİRLEŞTİREN BU BALSAM, DIŞTAN KULLANILDIĞI HALDE İÇTEN İYİLEŞMEYİ HIZLANDIRIR.</p>
+                    <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-teal-600">
+                        <h4 class="font-black text-slate-900 mb-2 underline">ZENGİN İÇERİK:</h4>
+                        <p class="italic">RESVERATROL, İSVİÇRE ELMA KÖKÜ ÖZÜ, SİBİRYA GİNSENGİ, ÇİN TARÇINI, ZERDEÇAL, PELİN OTU.</p>
+                    </div>
+                    <ul class="space-y-1 text-[10px] font-black text-slate-800">
+                        <li>✔ 50 GRAM TÜP | TÜM YAŞ GRUPLARINA UYGUN</li>
+                        <li>✔ RAHATSIZ EDİCİ KOKU VE İZ BIRAKMAZ</li>
+                        <li class="text-teal-600">✔ YİYECEK VE İÇECEKLERE KATILABİLİR</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/905055372527?text=Merhaba, Fohow Enerji Balsamı siparişi vermek istiyorum." class="bg-[#25D366] text-white py-5 rounded-3xl text-center font-black tracking-widest text-xs">WHATSAPP İLE SİPARİŞ VER</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-dis" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-5xl rounded-[3rem] overflow-hidden flex flex-col md:flex-row relative max-h-[90vh] overflow-y-auto custom-scroll">
+            <button onclick="closeModal('modal-dis')" class="absolute top-6 right-6 font-black text-2xl z-20 bg-white/80 w-10 h-10 rounded-full shadow-lg">&times;</button>
+            <div class="md:w-1/2 bg-slate-100">
+                <img src="img/urun2.avif" class="w-full h-full object-cover min-h-[400px]">
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-3xl font-black mb-2 underline decoration-teal-500 underline-offset-8">FOHOW DİŞ MACUNU</h2>
+                <p class="text-teal-600 font-bold text-[10px] mb-8 tracking-[0.2em]">BİTKİSEL KORUMA & DOĞAL BEYAZLIK</p>
+                <div class="space-y-4 mb-8 text-[11px] leading-loose text-slate-600">
+                    <p>DOĞAL BİTKİSEL ÖZLERLE ZENGİNLEŞTİRİLMİŞ FORMÜLÜ SAYESİNDE DİŞ VE DİŞ ETİ SAĞLIĞINIZI KORUMAYA YARDIMCI OLUR.</p>
+                    <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-teal-600 text-[10px]">
+                        <h4 class="font-black text-slate-900 mb-2 underline">İÇERİK:</h4>
+                        <p class="italic tracking-tighter uppercase">ALOE VERA, BETA-GLUKAN, HYALÜRONAT, ALLANTOİN, DİPOTASYUM GLİSİRİZAT, VİTAMİNLER VE MİNERALLER.</p>
+                    </div>
+                    <ul class="space-y-1 text-[10px] font-black text-slate-800">
+                        <li>✔ PAKET İÇERİĞİ: 2 ADET 140 GR TÜP</li>
+                        <li>✔ DİŞ ETİ HASSASİYETİNE KARŞI ETKİLİ</li>
+                        <li>✔ DOĞAL PARLATICI ETKİ</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/905055372527?text=Merhaba, Fohow Diş Macunu (2li Paket) siparişi vermek istiyorum." class="bg-[#25D366] text-white py-5 rounded-3xl text-center font-black tracking-widest text-xs">WHATSAPP İLE SİPARİŞ VER</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-aloe" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-5xl rounded-[3rem] overflow-hidden flex flex-col md:flex-row relative max-h-[90vh] overflow-y-auto custom-scroll">
+            <button onclick="closeModal('modal-aloe')" class="absolute top-6 right-6 font-black text-2xl z-20 bg-white/80 w-10 h-10 rounded-full shadow-lg">&times;</button>
+            <div class="md:w-1/2 bg-slate-100">
+                <img src="img/urun3.avif" class="w-full h-full object-cover min-h-[400px]">
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-3xl font-black mb-2 underline decoration-teal-500 underline-offset-8">FOHOW ALOE VERA JEL</h2>
+                <p class="text-teal-600 font-bold text-[10px] mb-8 tracking-[0.2em]">%100 DOĞAL CİLT BAKIMI</p>
+                <div class="space-y-4 mb-8 text-[11px] leading-loose text-slate-600">
+                    <p>HİÇBİR KATKI MADDESİ İÇERMEYEN, TAMAMEN BİTKİSEL FORMÜLÜ İLE CİLDİNİZİ NEMLENDİRİR VE ONARIR.</p>
+                    <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-teal-600 text-[10px]">
+                        <h4 class="font-black text-slate-900 mb-2 underline">ZENGİN BİLEŞENLER:</h4>
+                        <p class="italic tracking-tighter uppercase">ALOE VERA ÖZÜ, BETA-GLUKAN, HYALÜRONAT, AMİNO ASİTLER, ENZİMLER VE SAPONİNLER.</p>
+                    </div>
+                    <ul class="space-y-1 text-[10px] font-black text-slate-800">
+                        <li>✔ 50 ML TÜP | %100 BİTKİSEL</li>
+                        <li>✔ CİLTTE YAĞLI HİS BIRAKMAZ</li>
+                        <li>✔ GÜNLÜK KULLANIMA UYGUN</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/905055372527?text=Merhaba, Fohow Aloe Vera Jel siparişi vermek istiyorum." class="bg-[#25D366] text-white py-5 rounded-3xl text-center font-black tracking-widest text-xs">WHATSAPP İLE SİPARİŞ VER</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-20 bg-slate-900 text-white text-center italic border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <h4 class="text-lg font-black text-teal-400 mb-4 underline decoration-2">ASELVİMERİDYEN</h4>
+            <p class="text-[9px] text-slate-400 tracking-[0.4em] mb-12">UFUK ALTAŞ & KÜBRA ALTAŞ GÜVENCESİYLE</p>
+            <a href="index.html" class="text-[10px] font-bold border-b border-white pb-1">ANA SAYFAYA DÖN</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.body.classList.add('modal-active');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.body.classList.remove('modal-active');
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-black/90')) {
+                event.target.classList.add('hidden');
+                document.body.classList.remove('modal-active');
+            }
+        }
+    </script>
+</body>
+</html>
