@@ -1,73 +1,115 @@
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fohow Cihazları Satış ve Eğitim | BEM, REM, TİM - Aselvi Meridyen</title>
-    <meta name="description" content="Fohow BEM 2. Nesil, REM ve TİM (Termal Yatak) cihazları satış ve profesyonel eğitimi. Sakarya, Yalova ve İstanbul bölgelerine cihaz kurulumu ve desteği.">
-    <meta name="keywords" content="fohow cihazı fiyatı, fohow bem satın al, fohow tim termal yatak, fohow rem canlandırıcı masaj, fohow eğitimi kocaeli">
+    
+    <meta name="description" content="Fohow BEM 2. Nesil, REM ve TİM (Termal Yatak) cihazları satış ve profesyonel eğitimi. Kocaeli, Sakarya ve İstanbul bölgelerine cihaz kurulumu ve desteği.">
+    <meta name="keywords" content="fohow cihazı fiyatı, fohow bem satın al, fohow tim termal yatak, fohow rem canlandırıcı masaj, fohow eğitimi kocaeli, meridyen terapi cihazı fiyatları">
+    <meta name="author" content="Aselvi Meridyen">
+    <link rel="canonical" href="https://aselvimeridyen.com/cihazlar.html">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .nav-fixed {
+            position: fixed !important;
+            top: 0; left: 0; width: 100%;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 0.5rem 0 !important;
+            animation: slideIn 0.4s ease-out;
+        }
+        @keyframes slideIn { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic">
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic font-bold">
 
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 py-6">
+    <nav id="main-nav" class="relative w-full bg-white border-b border-slate-100 py-4 md:py-6 transition-all duration-500 z-50">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black text-teal-600 underline decoration-2 underline-offset-4 tracking-tighter uppercase">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
-            <div class="flex gap-8">
-                <a href="index.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
-                <a href="urunler.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition uppercase">ÜRÜNLER</a>
-                <a href="blog.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition uppercase">BLOG</a>
+            <a href="index.html" class="text-xl md:text-2xl font-black text-teal-600 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex gap-6 mr-4">
+                    <a href="index.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
+                    <a href="meridyen-terapi.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">TERAPİ</a>
+                    <a href="urunler.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">ÜRÜNLER</a>
+                </div>
+                
+                <a href="https://wa.me/905055372527" class="bg-[#25D366] text-white px-4 py-2.5 rounded-xl text-[9px] tracking-widest hover:scale-105 transition shadow-md">BİLGİ AL</a>
+                
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col gap-1.5 p-2 outline-none">
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                </button>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-2xl py-6 px-8 flex flex-col gap-5 lg:hidden">
+            <a href="index.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ANA SAYFA</a>
+            <a href="meridyen-terapi.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">TERAPİ NEDİR?</a>
+            <a href="cihazlar.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2 text-teal-600">CİHAZLAR</a>
+            <a href="urunler.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ÜRÜNLER</a>
+            <a href="blog.html" class="text-[10px] tracking-widest">BLOG</a>
         </div>
     </nav>
 
-    <header class="py-20 bg-white text-center border-b">
+    <header class="py-16 md:py-24 bg-white text-center border-b">
         <div class="container mx-auto px-6" data-aos="fade-down">
-            <h1 class="text-5xl font-black mb-4 tracking-tighter uppercase">FOHOW <span class="text-teal-600 uppercase">TEKNOLOJİSİ</span></h1>
-            <p class="text-slate-400 text-[9px] tracking-[0.5em] font-bold uppercase italic">Geleneksel Çin Tıbbı ve Modern Teknolojinin Buluşması</p>
+            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter uppercase italic">FOHOW <span class="text-teal-600">TEKNOLOJİSİ</span></h1>
+            <p class="text-slate-400 text-[8px] md:text-[9px] tracking-[0.4em] font-bold uppercase italic">Geleneksel Çin Tıbbı ve Modern Teknolojinin Buluşması</p>
         </div>
     </header>
 
-    <section class="py-20">
+    <section class="py-16 md:py-20">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
 
-                <article class="bg-white rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition hover:translate-y-[-10px]" data-aos="fade-up">
-                    <img src="img/cihaz1.jpg" class="w-full h-72 object-cover grayscale hover:grayscale-0 transition duration-700">
-                    <div class="p-10 flex-grow">
-                        <span class="text-teal-600 font-black text-[9px] tracking-widest uppercase">CANLANDIRICI MASAJ</span>
-                        <h2 class="text-2xl font-black my-4 leading-tight uppercase">FOHOW REM CİHAZI</h2>
-                        <p class="text-[11px] text-slate-500 mb-6 leading-relaxed lowercase not-italic font-medium">
+                <article class="bg-white rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition-all duration-500 hover:translate-y-[-10px]" data-aos="fade-up">
+                    <div class="relative overflow-hidden group">
+                        <img src="img/cihaz1.jpg" class="w-full h-64 md:h-72 object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700" alt="Fohow REM Canlandırıcı Masaj Cihazı">
+                    </div>
+                    <div class="p-8 md:p-10 flex-grow">
+                        <span class="text-teal-600 font-black text-[8px] md:text-[9px] tracking-widest uppercase">CANLANDIRICI MASAJ</span>
+                        <h2 class="text-xl md:text-2xl font-black my-4 leading-tight uppercase">FOHOW REM CİHAZI</h2>
+                        <p class="text-[11px] text-slate-500 mb-8 leading-relaxed lowercase not-italic font-medium">
                             Revitalizing Massager (Canlandırıcı Masaj) cihazı. Enerji kanallarını canlandırarak bedenin doğal dengesini bulmasına yardımcı olur.
                         </p>
-                        <a href="https://wa.me/905055372527?text=Fohow REM Cihazı hakkında fiyat bilgisi alabilir miyim?" class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[10px] hover:bg-teal-600 transition">BİLGİ AL</a>
+                        <a href="https://wa.me/905055372527?text=Fohow REM Cihazı hakkında fiyat bilgisi alabilir miyim?" class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[9px] md:text-[10px] hover:bg-teal-600 transition shadow-lg">BİLGİ AL</a>
                     </div>
                 </article>
 
-                <article class="bg-white rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition hover:translate-y-[-10px]" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/cihaz2.jpg" class="w-full h-72 object-cover grayscale hover:grayscale-0 transition duration-700">
-                    <div class="p-10 flex-grow">
-                        <span class="text-teal-600 font-black text-[9px] tracking-widest uppercase">2. NESİL TEKNOLOJİ</span>
-                        <h2 class="text-2xl font-black my-4 leading-tight uppercase">FOHOW BEM CİHAZI</h2>
-                        <p class="text-[11px] text-slate-500 mb-6 leading-relaxed lowercase not-italic font-medium">
-                            2. Nesil BEM özelliklerine sahip; daha yüksek teknoloji ve minimal tasarım. Geleneksel Çin Tıbbı odaklı yeni nesil bir trend.
+                <article class="bg-white rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition-all duration-500 hover:translate-y-[-10px]" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden group">
+                        <img src="img/cihaz2.jpg" class="w-full h-64 md:h-72 object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700" alt="Fohow BEM 2. Nesil Meridyen Terapi Cihazı">
+                    </div>
+                    <div class="p-8 md:p-10 flex-grow">
+                        <span class="text-teal-600 font-black text-[8px] md:text-[9px] tracking-widest uppercase">3. NESİL TEKNOLOJİ</span>
+                        <h2 class="text-xl md:text-2xl font-black my-4 leading-tight uppercase">FOHOW BEM CİHAZI</h2>
+                        <p class="text-[11px] text-slate-500 mb-8 leading-relaxed lowercase not-italic font-medium">
+                            3. Nesil BEM özelliklerine sahip; daha yüksek teknoloji ve minimal tasarım. Geleneksel Çin Tıbbı odaklı yeni nesil bir trend.
                         </p>
-                        <a href="https://wa.me/905055372527?text=Fohow BEM 2. Nesil hakkında detaylı bilgi ve eğitim almak istiyorum." class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[10px] hover:bg-teal-600 transition">BİLGİ AL</a>
+                        <a href="https://wa.me/905055372527?text=Fohow BEM 2. Nesil hakkında detaylı bilgi ve eğitim almak istiyorum." class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[9px] md:text-[10px] hover:bg-teal-600 transition shadow-lg">EĞİTİM & SATIŞ</a>
                     </div>
                 </article>
 
-                <article class="bg-white rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition hover:translate-y-[-10px]" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/cihaz3.jpg" class="w-full h-72 object-cover grayscale hover:grayscale-0 transition duration-700">
-                    <div class="p-10 flex-grow">
-                        <span class="text-teal-600 font-black text-[9px] tracking-widest uppercase">TERMO-KIZILÖTESİ</span>
-                        <h2 class="text-2xl font-black my-4 leading-tight uppercase">FOHOW TİM CİHAZI</h2>
-                        <p class="text-[11px] text-slate-500 mb-6 leading-relaxed lowercase not-italic font-medium">
+                <article class="bg-white rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-xl flex flex-col transition-all duration-500 hover:translate-y-[-10px]" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden group">
+                        <img src="img/cihaz3.jpg" class="w-full h-64 md:h-72 object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700" alt="Fohow TİM Termal Yatak SPA Kapsülü">
+                    </div>
+                    <div class="p-8 md:p-10 flex-grow">
+                        <span class="text-teal-600 font-black text-[8px] md:text-[9px] tracking-widest uppercase">TERMO-KIZILÖTESİ</span>
+                        <h2 class="text-xl md:text-2xl font-black my-4 leading-tight uppercase">FOHOW TİM CİHAZI</h2>
+                        <p class="text-[11px] text-slate-500 mb-8 leading-relaxed lowercase not-italic font-medium">
                             Kızılötesi ışık, termoterapi ve manyetoterapi etkili Termal Yatak (SPA Kapsülü). Terleme prensibi ile vücudu temizler.
                         </p>
-                        <a href="https://wa.me/905055372527?text=Fohow TİM (SPA Kapsülü) hakkında teknik detay ve kurulum bilgisi alabilir miyim?" class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[10px] hover:bg-teal-600 transition">BİLGİ AL</a>
+                        <a href="https://wa.me/905055372527?text=Fohow TİM (SPA Kapsülü) hakkında teknik detay ve kurulum bilgisi alabilir miyim?" class="block bg-slate-900 text-white text-center py-4 rounded-2xl font-black tracking-widest text-[9px] md:text-[10px] hover:bg-teal-600 transition shadow-lg">DETAYLARI GÖR</a>
                     </div>
                 </article>
 
@@ -75,20 +117,46 @@
         </div>
     </section>
 
-    <section class="py-16 bg-slate-900 text-white italic">
+    <section class="py-16 bg-slate-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <div class="max-w-3xl mx-auto border-2 border-teal-500 p-8 rounded-[2rem]" data-aos="zoom-in">
-                <h3 class="text-teal-400 font-black mb-4 uppercase">YASAL BİLGİLENDİRME</h3>
-                <p class="text-[11px] leading-relaxed uppercase">BU CİHAZLAR MEDİKAL BİR TEDAVİ ARACI DEĞİLDİR. GELENEKSEL ÇİN TIBBI İÇERİKLİ UYGULAMALARDA BEDENSEL CANLANMAYI DESTEKLEYİCİ ÜRÜNLERDİR.</p>
+            <div class="max-w-3xl mx-auto border border-slate-700 p-8 md:p-12 rounded-[2rem] bg-slate-800/30" data-aos="zoom-in">
+                <h3 class="text-teal-400 font-black mb-6 uppercase tracking-widest text-xs">ÖNEMLİ BİLGİLENDİRME</h3>
+                <p class="text-[10px] md:text-[11px] leading-relaxed uppercase opacity-80 italic">BU CİHAZLAR MEDİKAL BİR TEDAVİ ARACI DEĞİLDİR. GELENEKSEL ÇİN TIBBI İÇERİKLİ UYGULAMALARDA BEDENSEL CANLANMAYI VE DOĞAL DENGEYİ DESTEKLEYİCİ ÜRÜNLERDİR.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t">
-        <p class="text-[8px] text-slate-400 tracking-[0.5em] uppercase italic">© 2026 ASELVİMERİDYEN | DERİNCE - KOCAELİ</p>
+    <footer class="py-12 bg-white text-center border-t">
+        <div class="container mx-auto px-6">
+            <a href="index.html" class="text-lg font-black text-slate-900 tracking-tighter mb-4 block">ASELVİ<span class="text-teal-600">MERİDYEN</span></a>
+            <p class="text-[8px] text-slate-400 tracking-[0.5em] uppercase italic">© 2026 TÜM HAKLARI SAKLIDIR | KOCAELİ, TÜRKİYE</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Navbar Scroll Efekti
+        const nav = document.querySelector('#main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) nav.classList.add('nav-fixed');
+            else nav.classList.remove('nav-fixed');
+        });
+
+        // Mobil Menü Mantığı
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const spans = menuBtn.querySelectorAll('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            spans[0].classList.toggle('rotate-45');
+            spans[0].classList.toggle('translate-y-2');
+            spans[1].classList.toggle('opacity-0');
+            spans[2].classList.toggle('-rotate-45');
+            spans[2].classList.toggle('-translate-y-2');
+        });
+    </script>
 </body>
 </html>

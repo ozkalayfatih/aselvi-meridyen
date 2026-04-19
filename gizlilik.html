@@ -1,44 +1,112 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik ve Şartlar | Aselvimeridyen</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
-</head>
-<body class="bg-slate-50 text-slate-800 leading-relaxed uppercase italic">
+    <title>Gizlilik ve Kullanım Şartları | Aselvi Meridyen</title>
+    
+    <meta name="description" content="Aselvi Meridyen gizlilik politikası, kullanım şartları ve yasal tıbbi uyarı metni. Veri güvenliği ve içerik kullanım hakları hakkında bilgilendirme.">
+    <meta name="robots" content="noindex, follow"> <link rel="canonical" href="https://aselvimeridyen.com/gizlilik.html">
 
-    <nav class="bg-white border-b py-6 sticky top-0 z-50">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .legal-content p { margin-bottom: 1.5rem; text-transform: none; font-style: normal; font-weight: 500; }
+        .nav-fixed {
+            position: fixed !important;
+            top: 0; left: 0; width: 100%;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 0.5rem 0 !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic font-bold">
+
+    <nav id="main-nav" class="relative w-full bg-white border-b border-slate-100 py-4 md:py-6 transition-all duration-500 z-50">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black text-teal-600 underline">ASELVİMERİDYEN</a>
-            <a href="index.html" class="text-[10px] font-bold tracking-widest">← ANA SAYFA</a>
+            <a href="index.html" class="text-xl md:text-2xl font-black text-teal-600 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex gap-6 mr-4">
+                    <a href="index.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
+                    <a href="blog.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">BLOG</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col gap-1.5 p-2 outline-none">
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-2xl py-6 px-8 flex flex-col gap-5 lg:hidden">
+            <a href="index.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ANA SAYFA</a>
+            <a href="meridyen-terapi.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">TERAPİ NEDİR?</a>
+            <a href="cihazlar.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">CİHAZLAR</a>
+            <a href="urunler.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ÜRÜNLER</a>
+            <a href="blog.html" class="text-[10px] tracking-widest">BLOG</a>
         </div>
     </nav>
 
-    <article class="py-20 container mx-auto px-6 max-w-3xl bg-white my-10 shadow-sm rounded-[2rem]">
-        <h1 class="text-3xl font-black mb-10 border-b-4 border-teal-500 pb-4">GİZLİLİK VE KULLANIM ŞARTLARI</h1>
-        
-        <div class="space-y-8 text-[11px] tracking-wide">
-            <p>Bu web sitesini ziyaret ederek ve hizmetlerimizden yararlanarak aşağıdaki şartları kabul etmiş sayılırsınız:</p>
+    <main class="py-16 md:py-24 container mx-auto px-6 max-w-4xl">
+        <article class="bg-white p-8 md:p-16 shadow-xl rounded-[2.5rem] md:rounded-[4rem] border border-slate-100">
+            <h1 class="text-3xl md:text-5xl font-black mb-10 tracking-tighter italic">GİZLİLİK VE <br><span class="text-teal-600">ŞARTLAR</span></h1>
+            
+            <div class="legal-content text-[11px] md:text-[12px] tracking-wide text-slate-600">
+                <p class="mb-8 opacity-70">Bu web sitesini ziyaret ederek ve Aselvi Meridyen hizmetlerinden yararlanarak aşağıdaki şartları peşinen kabul etmiş sayılırsınız:</p>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">GİZLİLİK POLİTİKASI</h2>
-                <p>Web sitemiz üzerinden paylaştığınız iletişim bilgileri sadece sizlere randevu ve hizmet bilgisi sunmak amacıyla kullanılır. Bilgileriniz güvenli sunucularda saklanmaktadır.</p>
-            </section>
+                <section class="mb-12">
+                    <h2 class="text-lg md:text-xl font-black text-slate-900 mb-4 border-l-4 border-teal-500 pl-4 italic">01. GİZLİLİK POLİTİKASI</h2>
+                    <p>Web sitemiz üzerinden (WhatsApp, Telefon veya E-posta yoluyla) paylaştığınız kişisel veriler ve iletişim bilgileri, sadece sizlere randevu oluşturmak, hizmetlerimiz hakkında bilgi sunmak ve danışmanlık süreçlerini yönetmek amacıyla kullanılır. Bilgileriniz üçüncü şahıslarla asla paylaşılmaz ve güvenli bir şekilde muhafaza edilir.</p>
+                </section>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">TIBBİ UYARI</h2>
-                <p>Sitemizde yer alan bilgiler genel bilgilendirme amaçlıdır. Meridyen Terapi bir destekleyici yöntemdir ve teşhis/tedavi yerine geçmez. Sağlık sorunlarınız için öncelikle bir doktora danışınız.</p>
-            </section>
+                <section class="mb-12">
+                    <h2 class="text-lg md:text-xl font-black text-slate-900 mb-4 border-l-4 border-teal-500 pl-4 italic">02. TIBBİ SORUMLULUK REDDİ</h2>
+                    <p>Aselvi Meridyen bünyesinde sunulan Meridyen Terapi ve Fohow teknolojileri, modern tıbba destekleyici ve bedensel canlanmayı artırmaya yönelik yöntemlerdir. Sitemizde yer alan hiçbir içerik, görsel veya metin "teşhis koyma" veya "tedavi etme" amacı taşımaz. Her türlü sağlık sorununuz için öncelikle uzman bir tıp doktoruna danışmanız gerektiğini hatırlatırız.</p>
+                </section>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">İÇERİK KULLANIMI</h2>
-                <p>aselvimeridyen.com sitesinde yer alan tüm görsel ve metinlerin telif hakları <strong>Ufuk Altaş & Kübra Altaş</strong>'a aittir. İzsiz kopyalanamaz.</p>
-            </section>
-        </div>
-    </article>
+                <section class="mb-12">
+                    <h2 class="text-lg md:text-xl font-black text-slate-900 mb-4 border-l-4 border-teal-500 pl-4 italic">03. TELİF HAKLARI</h2>
+                    <p>aselvimeridyen.com domain adresi altında yayınlanan tüm metinler, grafikler, logo tasarımları ve markaya özel görsellerin telif hakları <strong>Ufuk Altaş & Kübra Altaş</strong>'a aittir. Yazılı izin alınmaksızın kopyalanması, çoğaltılması veya ticari amaçla kullanılması durumunda yasal yollara başvurma hakkı saklıdır.</p>
+                </section>
 
+                <div class="pt-8 border-t border-slate-100 text-center">
+                    <a href="index.html" class="inline-block text-teal-600 font-black tracking-widest text-[10px] hover:underline">← ANA SAYFAYA DÖN</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="py-12 text-center">
+        <p class="text-[8px] md:text-[9px] font-black text-slate-400 tracking-[0.5em] uppercase italic">© 2026 ASELVİMERİDYEN | DERİNCE - KOCAELİ</p>
+    </footer>
+
+    <script>
+        // Navbar Scroll Efekti
+        const nav = document.querySelector('#main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) nav.classList.add('nav-fixed');
+            else nav.classList.remove('nav-fixed');
+        });
+
+        // Mobil Menü Mantığı
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const spans = menuBtn.querySelectorAll('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            spans[0].classList.toggle('rotate-45');
+            spans[0].classList.toggle('translate-y-2');
+            spans[1].classList.toggle('opacity-0');
+            spans[2].classList.toggle('-rotate-45');
+            spans[2].classList.toggle('-translate-y-2');
+        });
+    </script>
 </body>
 </html>

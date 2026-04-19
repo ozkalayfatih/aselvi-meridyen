@@ -1,47 +1,128 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KVKK Aydınlatma Metni | Aselvimeridyen</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
-</head>
-<body class="bg-slate-50 text-slate-800 leading-relaxed uppercase italic">
+    <title>KVKK Aydınlatma Metni | Aselvi Meridyen</title>
+    
+    <meta name="description" content="Aselvi Meridyen Kişisel Verilerin Korunması Kanunu (KVKK) aydınlatma metni. Verilerinizin işlenme amaçları, aktarımı ve haklarınız hakkında bilgilendirme.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://aselvimeridyen.com/kvkk.html">
 
-    <nav class="bg-white border-b py-6 sticky top-0 z-50">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .kvkk-content p { margin-bottom: 1.25rem; text-transform: none; font-style: normal; font-weight: 500; }
+        .nav-fixed {
+            position: fixed !important;
+            top: 0; left: 0; width: 100%;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 0.5rem 0 !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic font-bold">
+
+    <nav id="main-nav" class="relative w-full bg-white border-b border-slate-100 py-4 md:py-6 transition-all duration-500 z-50">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black text-teal-600 underline">ASELVİMERİDYEN</a>
-            <a href="index.html" class="text-[10px] font-bold tracking-widest">← ANA SAYFA</a>
+            <a href="index.html" class="text-xl md:text-2xl font-black text-teal-600 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex gap-6 mr-4">
+                    <a href="index.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
+                    <a href="blog.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">BLOG</a>
+                    <a href="iletisim.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">İLETİŞİM</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col gap-1.5 p-2 outline-none">
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-2xl py-6 px-8 flex flex-col gap-5 lg:hidden">
+            <a href="index.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2 uppercase">ANA SAYFA</a>
+            <a href="meridyen-terapi.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2 uppercase">TERAPİ</a>
+            <a href="cihazlar.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2 uppercase">CİHAZLAR</a>
+            <a href="urunler.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2 uppercase">ÜRÜNLER</a>
+            <a href="blog.html" class="text-[10px] tracking-widest uppercase">BLOG</a>
         </div>
     </nav>
 
-    <article class="py-20 container mx-auto px-6 max-w-3xl bg-white my-10 shadow-sm rounded-[2rem]">
-        <h1 class="text-3xl font-black mb-10 border-b-4 border-teal-500 pb-4">KVKK AYDINLATMA METNİ</h1>
-        
-        <div class="space-y-8 text-[11px] tracking-wide">
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">1. VERİ SORUMLUSU</h2>
-                <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, kişisel verileriniz veri sorumlusu olarak <strong>Aselvimeridyen (Ufuk Altaş & Kübra Altaş)</strong> tarafından aşağıda açıklanan kapsamda işlenebilecektir.</p>
-            </section>
+    <main class="py-12 md:py-20 container mx-auto px-6 max-w-4xl">
+        <article class="bg-white p-8 md:p-16 shadow-2xl rounded-[2.5rem] md:rounded-[4rem] border border-slate-100" data-aos="fade-up">
+            <header class="mb-12">
+                <h1 class="text-3xl md:text-5xl font-black mb-4 tracking-tighter italic">KVKK <br><span class="text-teal-600">AYDINLATMA</span></h1>
+                <div class="w-16 h-1.5 bg-teal-500"></div>
+            </header>
+            
+            <div class="kvkk-content text-[11px] md:text-[13px] tracking-wide text-slate-600">
+                
+                <section class="mb-10">
+                    <h2 class="text-lg font-black text-slate-900 mb-4 italic uppercase tracking-tight">1. VERİ SORUMLUSU</h2>
+                    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, kişisel verileriniz veri sorumlusu olarak <strong>Aselvi Meridyen (Ufuk Altaş & Kübra Altaş)</strong> tarafından yasal mevzuata tam uyum çerçevesinde işlenebilecektir.</p>
+                </section>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">2. KİŞİSEL VERİLERİN İŞLENME AMACI</h2>
-                <p>Toplanan kişisel verileriniz; randevu süreçlerinin yönetilmesi, hizmetlerimizin sunulması, şikayet ve taleplerinizin takibi ve yasal yükümlülüklerin yerine getirilmesi amacıyla işlenmektedir.</p>
-            </section>
+                <section class="mb-10">
+                    <h2 class="text-lg font-black text-slate-900 mb-4 italic uppercase tracking-tight">2. KİŞİSEL VERİLERİN İŞLENME AMACI</h2>
+                    <p>Toplanan kişisel verileriniz; randevu süreçlerinin planlanması, size özel sağlık danışmanlığı hizmetlerimizin sunulması, hizmet sonrası destek, taleplerinizin yanıtlanması ve yasal yükümlülüklerin (fatura, kayıt vb.) yerine getirilmesi amacıyla sınırlı olarak işlenmektedir.</p>
+                </section>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">3. VERİLERİN AKTARILMASI</h2>
-                <p>Kişisel verileriniz, kanunen yetkili kamu kurumları ve adli makamlar dışında hiçbir üçüncü taraf veya kurumla ticari amaçla paylaşılmamaktadır.</p>
-            </section>
+                <section class="mb-10">
+                    <h2 class="text-lg font-black text-slate-900 mb-4 italic uppercase tracking-tight">3. VERİLERİN AKTARILMASI</h2>
+                    <p>Kişisel verileriniz, güvenliğiniz ve gizliliğiniz esas alınarak; kanunen yetkili kamu kurumları ve adli makamlar dışında hiçbir üçüncü taraf, kurum veya reklam platformu ile ticari amaçla paylaşılmaz.</p>
+                </section>
 
-            <section>
-                <h2 class="text-lg font-bold text-teal-600 mb-2">4. HAKLARINIZ</h2>
-                <p>KVKK’nın 11. maddesi uyarınca; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini isteme veya silinmesini talep etme hakkına sahipsiniz. Başvurularınızı <strong>aselvimeridyen@gmail.com</strong> adresine iletebilirsiniz.</p>
-            </section>
+                <section class="mb-10">
+                    <h2 class="text-lg font-black text-slate-900 mb-4 italic uppercase tracking-tight">4. VERİ SAHİBİNİN HAKLARI</h2>
+                    <p>KVKK’nın 11. maddesi uyarınca; verilerinizin işlenip işlenmediğini öğrenme, işlenme amacına uygun kullanılıp kullanılmadığını sorma, eksik veya yanlış işlenmişse düzeltilmesini isteme veya silinmesini talep etme haklarınız saklıdır. Bu haklarınızı kullanmak için <strong>aselvimeridyen@gmail.com</strong> üzerinden bizimle iletişime geçebilirsiniz.</p>
+                </section>
+
+                <div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-[9px] opacity-50 mb-0 italic">Son Güncelleme: Ocak 2026</p>
+                    <a href="index.html" class="text-teal-600 font-black tracking-widest text-[10px] hover:scale-105 transition uppercase">← ANA SAYFAYA DÖN</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="py-12 bg-slate-900 text-white text-center italic">
+        <div class="container mx-auto px-6">
+            <p class="text-[8px] md:text-[9px] font-black text-slate-500 tracking-[0.5em] uppercase">ASELVİMERİDYEN SAĞLIKLI YAŞAM VE ŞİFA DANIŞMANLIĞI</p>
         </div>
-    </article>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Navbar Scroll
+        const nav = document.querySelector('#main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) nav.classList.add('nav-fixed');
+            else nav.classList.remove('nav-fixed');
+        });
+
+        // Mobil Menü
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const spans = menuBtn.querySelectorAll('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            spans[0].classList.toggle('rotate-45');
+            spans[0].classList.toggle('translate-y-2');
+            spans[1].classList.toggle('opacity-0');
+            spans[2].classList.toggle('-rotate-45');
+            spans[2].classList.toggle('-translate-y-2');
+        });
+    </script>
 </body>
 </html>

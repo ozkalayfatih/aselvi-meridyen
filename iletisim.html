@@ -3,68 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim | Aselvimeridyen</title>
+    <title>İletişim | Aselvi Meridyen Derince Kocaeli</title>
+    
+    <meta name="description" content="Aselvi Meridyen iletişim bilgileri. Kocaeli Derince'de meridyen terapi ve Fohow ürünleri için randevu alın. Yol tarifi ve iletişim kanalları.">
+    <meta name="keywords" content="aselvi meridyen iletişim, meridyen terapi randevu, derince meridyen terapi, kocaeli fohow iletişim, ufuk altaş, kübra altaş">
+    <link rel="canonical" href="https://aselvimeridyen.com/iletisim.html">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .contact-box { border-radius: 3rem; transition: all 0.3s ease; }
+        .contact-box { border-radius: 2rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        @media (max-width: 768px) {
+            .contact-box { border-radius: 1.5rem; }
+        }
+
+        .nav-fixed {
+            position: fixed !important;
+            top: 0; left: 0; width: 100%;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 0.5rem 0 !important;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic">
+<body class="bg-slate-50 text-slate-900 leading-relaxed uppercase italic font-bold">
 
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 py-6">
+    <nav id="main-nav" class="relative w-full bg-white border-b border-slate-100 py-4 md:py-6 transition-all duration-500 z-50">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black text-teal-600 underline decoration-2 underline-offset-4 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
-            <div class="flex gap-8">
-                <a href="index.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
-                <a href="blog.html" class="text-[10px] font-bold tracking-widest hover:text-teal-600 transition">BLOG</a>
+            <a href="index.html" class="text-xl md:text-2xl font-black text-teal-600 tracking-tighter">ASELVİ<span class="text-slate-800">MERİDYEN</span></a>
+            
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex gap-6 mr-4">
+                    <a href="index.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">ANA SAYFA</a>
+                    <a href="meridyen-terapi.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">TERAPİ</a>
+                    <a href="blog.html" class="text-[9px] tracking-widest hover:text-teal-600 transition">BLOG</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col gap-1.5 p-2 outline-none">
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                    <span class="w-6 h-0.5 bg-slate-900 transition-all"></span>
+                </button>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-2xl py-6 px-8 flex flex-col gap-5 lg:hidden">
+            <a href="index.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ANA SAYFA</a>
+            <a href="meridyen-terapi.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">TERAPİ NEDİR?</a>
+            <a href="cihazlar.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">CİHAZLAR</a>
+            <a href="urunler.html" class="text-[10px] tracking-widest border-b border-slate-50 pb-2">ÜRÜNLER</a>
+            <a href="blog.html" class="text-[10px] tracking-widest">BLOG</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col md:flex-row">
+    <section class="min-h-screen flex flex-col lg:flex-row">
         
-        <div class="md:w-5/12 p-8 md:p-20 bg-white flex flex-col justify-center" data-aos="fade-right">
-            <h1 class="text-5xl font-black mb-10 tracking-tighter">BİZE <br><span class="text-teal-600 font-black">ULAŞIN</span></h1>
+        <div class="w-full lg:w-5/12 p-8 md:p-16 lg:p-24 bg-white flex flex-col justify-center" data-aos="fade-right">
+            <h1 class="text-4xl md:text-6xl font-black mb-12 tracking-tighter uppercase italic leading-none">BİZE <br><span class="text-teal-600">ULAŞIN</span></h1>
             
-            <div class="space-y-10">
+            <div class="space-y-12">
                 <div class="group">
-                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-3">MERKEZ ADRES</h3>
-                    <p class="text-lg font-bold leading-tight text-slate-800 not-italic uppercase">
-                        Sırrıpaşa, Denizciler Cd.<br>
-                        No:118, 41900<br>
+                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-4">MERKEZ ADRESİMİZ</h3>
+                    <p class="text-base md:text-lg font-bold leading-tight text-slate-800 not-italic uppercase">
+                        Sırrıpaşa Mahallesi,<br>
+                        Denizciler Caddesi,<br>
+                        No: 118, 41900<br>
                         Derince / Kocaeli
                     </p>
                 </div>
 
                 <div class="space-y-4">
-                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-3">İLETİŞİM KANALLARI</h3>
+                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-4">HIZLI İLETİŞİM</h3>
                     
-                    <a href="https://wa.me/905055372527" class="flex items-center justify-between bg-[#25D366] text-white p-6 contact-box hover:scale-105 shadow-xl transition">
-                        <span class="font-black tracking-widest text-xs">WHATSAPP HATTI</span>
-                        <span class="text-xs">0505 537 25 27</span>
+                    <a href="https://wa.me/905055372527" class="flex items-center justify-between bg-[#25D366] text-white p-5 md:p-6 contact-box hover:scale-[1.02] shadow-lg transition">
+                        <span class="font-black tracking-widest text-[10px] md:text-xs">WHATSAPP RANDEVU</span>
+                        <span class="text-[10px] md:text-xs font-medium not-italic">0505 537 25 27</span>
                     </a>
 
-                    <a href="tel:+905055372527" class="flex items-center justify-between bg-slate-900 text-white p-6 contact-box hover:scale-105 shadow-xl transition">
-                        <span class="font-black tracking-widest text-xs">HEMEN ARAYIN</span>
-                        <span class="text-xs">TIKLA ARA</span>
+                    <a href="tel:+905055372527" class="flex items-center justify-between bg-slate-900 text-white p-5 md:p-6 contact-box hover:scale-[1.02] shadow-lg transition">
+                        <span class="font-black tracking-widest text-[10px] md:text-xs">HEMEN ARAYIN</span>
+                        <span class="text-[10px] md:text-xs uppercase">TIKLA ARA</span>
                     </a>
                 </div>
 
                 <div>
-                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-3">E-POSTA ADRESİ</h3>
-                    <a href="mailto:aselvimeridyem@gmail.com" class="text-md font-black border-b-2 border-teal-500 pb-1 hover:text-teal-600 transition tracking-tighter lowercase not-italic">
-                        aselvimeridyem@gmail.com
+                    <h3 class="text-teal-600 font-black text-[10px] tracking-[0.3em] mb-4">E-POSTA</h3>
+                    <a href="mailto:aselvimeridyen@gmail.com" class="text-sm md:text-base font-black border-b-2 border-teal-500 pb-1 hover:text-teal-600 transition tracking-tighter lowercase not-italic">
+                        aselvimeridyen@gmail.com
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="md:w-7/12 h-[400px] md:h-auto border-l border-slate-100" data-aos="fade-left">
+        <div class="w-full lg:w-7/12 h-[450px] lg:h-auto grayscale hover:grayscale-0 transition-all duration-1000" data-aos="fade-left">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.465561571542!2d29.8276662!3d40.7512345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4f5f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2sSırrıpaşa%2C%20Denizciler%20Cd.%20No%3A118%2C%2041900%20Derince%2FKocaeli!5e0!3m2!1str!2str!4v1713369012345!5m2!1str!2str" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5746766465355!2d29.83151847656606!3d40.74944887138848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4f7d3455174f%3A0x6b77209930f98e74!2zRGVuaXpjaWxlciBDZC4gTm86MTE4LCBTxLFycsSxcGHFnGEsIDQxOTAwIERlcmluY2UvS29jYWVsaQ!5e0!3m2!1str!2str!4v1713500000000!5m2!1str!2str" 
                 width="100%" 
                 height="100%" 
                 style="border:0;" 
@@ -76,13 +114,36 @@
 
     </section>
 
-    <footer class="py-12 bg-white text-center border-t border-slate-100">
-        <p class="text-[9px] font-black text-slate-400 tracking-[0.5em]">© 2026 ASELVİMERİDYEN - DERİNCE / KOCAELİ</p>
+    <footer class="py-10 bg-white text-center border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <p class="text-[8px] md:text-[9px] font-black text-slate-400 tracking-[0.5em] uppercase">© 2026 ASELVİMERİDYEN - UFUK & KÜBRA ALTAŞ</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
+
+        // Navbar Scroll Efekti
+        const nav = document.querySelector('#main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) nav.classList.add('nav-fixed');
+            else nav.classList.remove('nav-fixed');
+        });
+
+        // Mobil Menü Mantığı
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const spans = menuBtn.querySelectorAll('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            spans[0].classList.toggle('rotate-45');
+            spans[0].classList.toggle('translate-y-2');
+            spans[1].classList.toggle('opacity-0');
+            spans[2].classList.toggle('-rotate-45');
+            spans[2].classList.toggle('-translate-y-2');
+        });
     </script>
 </body>
 </html>
